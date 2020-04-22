@@ -2,7 +2,12 @@ const mongoose = require('mongoose')
 
 const resultSchema = new mongoose.Schema({
   result1: {
-    type: String
+    type: String,
+    required: true
+  },
+  result2: {
+    type: String,
+    required: true
   },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
