@@ -4,7 +4,7 @@ const auth = require('../middleware/auth')
 const router = new express.Router()
 
 router.post('/results', auth, async (req, res) => {
-  const result = new result({
+  const result = new Result({
     ...req.body,
     owner: req.user._id
   })
