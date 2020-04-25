@@ -9,6 +9,10 @@ const resultSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  result3: {
+    type: String,
+    required: true
+  },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
     required: true,
