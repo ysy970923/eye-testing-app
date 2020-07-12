@@ -14,7 +14,7 @@ const userSchema = new mongoose.Schema({
     required: true,
     trim: true
   },
-  age: {
+  point: {
     type: Number,
     default: 0,
     validate(value) {
